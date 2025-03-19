@@ -1,0 +1,129 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/*-------------- Pagina welcome.blade.php -----------------------------------*/
+
+
+
+.title {
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Aggiunge un'ombra al testo */
+
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    /* Aggiunge una transizione per il colore e l'ombra */
+}
+
+
+.title:hover {
+    color: black;
+    /* Cambia il colore quando il testo viene hoverato */
+
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    /* Intensifica l'ombra al passaggio del mouse */
+}
+
+
+
+.bg-background {
+    background-image: url('/metalGear.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+/*-------------------- pagina Hideo Kojima---------------------------- */
+
+.hero-section {
+    height: 100vh;
+    background-image: url('../../public/metalGear.jpg');
+    /*  ..esco da css ../ e vado su public   */
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+/*--------------------stile navbar-------------------------------------------------------------------------- */
+
+
+/* Stile per il link con la classe active */
+.navbar-nav .nav-link.active {
+    background-color: #28a745;
+    /* Colore di sfondo verde personalizzato */
+    color: white !important;
+    /* Colore del testo bianco per contrastare con il verde */
+    font-weight: 600;
+    /* Rende il testo più audace */
+    border-radius: 30px;
+    /* Angoli arrotondati per un aspetto più morbido */
+    padding: 10px 20px;
+    /* Spaziatura interna per rendere il link più grande e cliccabile */
+    transition: all 0.3s ease;
+    /* Aggiunge una transizione morbida per il cambiamento di stile */
+}
+
+/* Effetto hover per il link attivo */
+.navbar-nav .nav-link.active:hover {
+    background-color: #218838;
+    /* Colore più scuro al passaggio del mouse */
+    text-decoration: none;
+    /* Rimuove la sottolineatura al passaggio del mouse */
+    transform: scale(1.05);
+    /* Effetto zoom leggero per far sembrare che il link "cresca" al passaggio del mouse */
+}
+
+/* Aggiungi un effetto quando il link non è attivo (per gli altri link) */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    /* Colore bianco di default per i link non attivi */
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Colore di sfondo leggero al passaggio del mouse */
+    color: white !important;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/*-------------------- navbar della homepage  Kojima----------------------------------------------------------------------- */
+
+/* Classe per la navbar quando si è sulla pagina Home */
+/* Classe per la navbar quando si è sulla pagina Home */
+.kojima {
+    padding: 40px 0;
+    /* Aumenta il padding verticale (raddoppia l'altezza della navbar) */
+    background-color: #4b5320;
+    /* Verde militare */
+    font-weight: 900;
+    /* Imposta un font-weight molto alto per enfatizzare il testo */
+    transition: all 0.3s ease;
+    /* Transizione morbida per il cambiamento */
+}
